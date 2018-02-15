@@ -2,8 +2,15 @@
 
 using namespace std;
 
-int main()
-{
-    cout << "Hello world!" << endl;
-    return 0;
+int main(){
+    int d;
+    string Dia[]={"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado","Domingo"};
+    cout<<"Ingresa un numero"<<endl;
+    cin>>d;
+     if(d >= 1 && d <= 7){
+          cout<<"el dia "<<d<<" es "<<Dia[d-1];
+      }else{
+          cout<<"No es un dia de la semana";
+      }
+return 0;
 }
